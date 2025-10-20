@@ -1,6 +1,7 @@
 # Asistensi Modul 3 - PAW
 
-> **Waktu:** 25 menit | **Nilai Maksimal:** 100  
+> **Waktu:** 25 menit | **Nilai Maksimal:** 100
+> Download File ZIP saja, File Lain hanya Preview Tidak perlu di download
 
 ---
 
@@ -48,3 +49,4 @@ Praktikan memahami manipulasi array PHP dan menyajikannya ke tampilan HTML berba
 
 > Praktikan bisa bereksperimen dengan `flex-wrap`, `gap`, `background-color`, `border-radius`, dll.  
 > Tujuannya adalah mempraktikkan manipulasi array sambil membuat tampilan produk yang menarik.
+
