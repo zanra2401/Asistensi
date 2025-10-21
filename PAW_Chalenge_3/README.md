@@ -2,7 +2,7 @@
 
 ## `WARNING PERATURAN TOLONG DI BACA`
 > **Waktu:** 25 menit | **Nilai Maksimal:** 100  
-> Download File ZIP saja, File Lain hanya Preview Tidak perlu di download
+> Download File ZIP saja, File Lain hanya Preview Tidak perlu di download  
 > Open net / book
 
 ---
@@ -51,6 +51,7 @@ Praktikan memahami manipulasi array PHP dan menyajikannya ke tampilan HTML berba
 
 > Praktikan bisa bereksperimen dengan `flex-wrap`, `gap`, `background-color`, `border-radius`, dll.  
 > Tujuannya adalah mempraktikkan manipulasi array sambil membuat tampilan produk yang menarik.
+
 
 
 
