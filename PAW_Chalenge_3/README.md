@@ -23,34 +23,30 @@ Praktikan memahami manipulasi array PHP dan menyajikannya ke tampilan HTML berba
 
 ### Instruksi
 1. Gunakan file `datasource.php` sebagai sumber data `$product`. **Jangan ubah isinya.**  
-2. File kerja adalah `soal2.php`. Semua manipulasi array dan penyajian data dilakukan di sini.  
-3. Tampilkan seluruh produk dalam **kartu/kotak flex**, dengan kolom:
+2. File kerja adalah `soal2.php`. Semua manipulasi array dan penyajian data dilakukan di sini.
+3. Tampilkan setiap kategori secara unik seperti di contoh hasil menggunakan array_map
+4. Tampilkan seluruh produk dalam **kartu/kotak flex**, dengan kolom:
    - Gambar Produk  
    - Nama Produk  
    - Kategori  
    - Stok
-4. **Filter Produk Berdasarkan Kategori**
+5. **Filter Produk Berdasarkan Kategori**
    - Buat filter produk per kategori menggunakan `array_filter`.  
    - Contoh: tampilkan hanya kategori `Elektronik` atau `Makanan`.
-5. **Sorting Produk**
+6. **Sorting Produk**
    - Urutkan produk berdasarkan **stok** atau **nama produk** sebelum ditampilkan.
-6. **Mapping / Transformasi**
-   - Tambahkan info tambahan di kartu, misal:
-     - Status Stok: `Tersedia` / `Habis`  
-     - Harga dummy (opsional)
-7. **Desain / CSS**
+7. **Desain / CSS** (opsional)
    - Gunakan **flexbox** atau **grid CSS** untuk kartu.  
    - Kartu harus rapi dan mudah dibaca.  
    - Referensi warna:
      - Ungu: `#9431ce`  
      - Abu muda: `#D8E0E0`
 8. **Larangan**
-   - **Tidak boleh menggunakan `<table>`** untuk menampilkan daftar produk.
-9. **Komentar**
-   - Tambahkan komentar yang menjelaskan logika **filter**, **sort**, dan **map**.
+   - **Tidak boleh menggunakan `<table>`** untuk menampilkan daftar produk kecuali sorting.
 
 > Praktikan bisa bereksperimen dengan `flex-wrap`, `gap`, `background-color`, `border-radius`, dll.  
 > Tujuannya adalah mempraktikkan manipulasi array sambil membuat tampilan produk yang menarik.
+
 
 
 
