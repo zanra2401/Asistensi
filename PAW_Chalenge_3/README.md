@@ -34,6 +34,9 @@ Setelah kalian selesai, zip seluruh file jawaban kalian dengan nama NIM_M3.zip c
 
 > Praktikan dapat berkreasi soal tampilan, yang pasti tampilkan secara rapi
 
+https://docs.google.com/forms/d/19u4CH3tfF-cOhXTDhK3d93DjUzHZ_aCFfOZlwH9rxJE/edit
+
+
 
 
 
