@@ -8,8 +8,8 @@
 ---
 
 ## 1. Soal 1 (Pendahuluan) (Nilai 5) 
-estimasi waktu mengerjakan 3 menit
-`Walaupun Soal 1 Bernilai Kecil Namun krusial agar kalian paham apa yang terjadi dan akan membantu kalian saat mengerjakan soal 2`
+estimasi waktu mengerjakan 3 menit  
+`Walaupun Soal 1 Bernilai Kecil Namun krusial agar kalian paham apa yang terjadi dan akan membantu kalian saat mengerjakan soal 2`  
 **Tujuan:** Memahami sumber data array ($product) dan hasil output mentah sebelum dimanipulasi.  
 - Soal bisa langsung dilihat di file **soal1(Pendahuluan).php**.
 
@@ -33,6 +33,7 @@ Praktikan memahami manipulasi array PHP dan menyajikannya ke tampilan HTML berba
 Setelah kalian selesai, zip seluruh file jawaban kalian dengan nama NIM_M3.zip contoh 23-087_M3.zip
 
 > Praktikan dapat berkreasi soal tampilan, yang pasti tampilkan secara rapi
+
 
 
 
