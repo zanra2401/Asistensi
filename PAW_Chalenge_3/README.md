@@ -1,19 +1,21 @@
 # Asistensi Modul 3 - PAW
 
 ## `WARNING PERATURAN TOLONG DI BACA`
-> **Waktu:** 25 menit | **Nilai Maksimal:** 100  
+> **Waktu:** 30 menit | **Nilai Maksimal:** 100  
 > Download File ZIP saja, File Lain hanya Preview Tidak perlu di download  
 > Open net / book
 
 ---
 
-## 1. Soal 1 (Pendahuluan)  
-**Tujuan:** Memahami sumber data (array) dan hasil output mentah sebelum dimanipulasi.  
+## 1. Soal 1 (Pendahuluan) (Nilai 5) 
+estimasi waktu mengerjakan 3 menit
+`Walaupun Soal 1 Bernilai Kecil Namun krusial agar kalian paham apa yang terjadi dan akan membantu kalian saat mengerjakan soal 2`
+**Tujuan:** Memahami sumber data array ($product) dan hasil output mentah sebelum dimanipulasi.  
 - Soal bisa langsung dilihat di file **soal1(Pendahuluan).php**.
 
 ---
 
-## 2. Soal 2 (Manipulasi Array dan Penyajian)  
+## 2. Soal 2 (Manipulasi Array dan Penyajian)
 **Tujuan:**  
 Praktikan memahami manipulasi array PHP dan menyajikannya ke tampilan HTML berbasis **“card” (bukan tabel)**.
 
@@ -22,30 +24,16 @@ Praktikan memahami manipulasi array PHP dan menyajikannya ke tampilan HTML berba
 - Praktikan bisa membuka file tersebut di browser untuk melihat contoh tata letak dan styling.  
 
 ### Instruksi
-1. Gunakan file `datasource.php` sebagai sumber data `$product`. **Jangan ubah isinya.**  
-2. File kerja adalah `soal2.php`. Semua manipulasi array dan penyajian data dilakukan di sini.
-3. Tampilkan setiap kategori secara unik seperti di contoh hasil menggunakan array_map
-4. Tampilkan seluruh produk dalam **kartu/kotak flex**, dengan kolom:
-   - Gambar Produk  
-   - Nama Produk  
-   - Kategori  
-   - Stok
-5. **Filter Produk Berdasarkan Kategori**
-   - Buat filter produk per kategori menggunakan `array_filter`.  
-   - Contoh: tampilkan hanya kategori `Elektronik` atau `Makanan`.
-6. **Sorting Produk**
-   - Urutkan produk berdasarkan **stok** atau **nama produk** sebelum ditampilkan.
-7. **Desain / CSS** (opsional)
-   - Gunakan **flexbox** atau **grid CSS** untuk kartu.  
-   - Kartu harus rapi dan mudah dibaca.  
-   - Referensi warna:
-     - Ungu: `#9431ce`  
-     - Abu muda: `#D8E0E0`
-8. **Larangan**
-   - **Tidak boleh menggunakan `<table>`** untuk menampilkan daftar produk kecuali sorting.
+1. coba akses array $product di file soal2(Manipulasi Array).php (Nila 65)
+   - map array $product dan hanya mengambil kategori setiap produk pastikan kategori unik tanpa duplikasi
+   - filter array produk berdasarkan kategori, jadi kalian butuh filter sebanyak kategori(unik)
+   - kalian sorting array produk berdasarkan stok dan secara ascending dan descending
+2. setelah kalian berhasil melakukan map, filter, sorting sekarang tugas kalian tampilkan array array tersebut secara rapi di html dengan css untuk tampilan tidak harus sama, namun tidak boleh pakai table kecuali menampilkan array hasil sorting (Nilai 30)
 
-> Praktikan bisa bereksperimen dengan `flex-wrap`, `gap`, `background-color`, `border-radius`, dll.  
-> Tujuannya adalah mempraktikkan manipulasi array sambil membuat tampilan produk yang menarik.
+Setelah kalian selesai, zip seluruh file jawaban kalian dengan nama NIM_M3.zip contoh 23-087_M3.zip
+
+> Praktikan dapat berkreasi soal tampilan, yang pasti tampilkan secara rapi
+
 
 
 
