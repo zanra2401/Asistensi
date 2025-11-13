@@ -70,8 +70,6 @@ Tugas halaman ini:
 4. Tambahkan tombol **“Kembali ke Daftar Supplier”** untuk kembali ke `supplier.php`.
 
 
-[⬅ Kembali ke Daftar Supplier]
-
 ### Estimasi Waktu
 **60 menit**
 
