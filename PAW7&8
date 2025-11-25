@@ -1,0 +1,68 @@
+# 💻 Tantangan Kode Langsung: Reporting, Session, dan Security (Modul 7 & 8)
+
+**Tujuan:** Mengimplementasikan fungsionalitas login berbasis level dan pembuatan laporan sederhana dengan fitur ekspor.
+
+**Perkiraan Durasi:** 50 Menit
+
+---
+
+## 1. Implementasi Keamanan dan Sesi (30 Menit)
+
+Anda diminta untuk membuat sistem login minimal menggunakan PHP dan mekanisme Session. [cite_start]Asumsikan Anda memiliki *database* dengan **table user** yang berisi kolom `username`, `password` (tersimpan dalam hash MD5), `nama`, dan `level` (1 untuk Admin, 2 untuk User Biasa) [cite: 334-345].
+
+### 1.1. Halaman Login (`login.php` & `proses-login.php`)
+
+1.  **Form Login (`login.php`)**: Buat formulir HTML sederhana untuk input *username* dan *password*.
+2.  **Proses Verifikasi (`proses-login.php`)**:
+    * [cite_start]Mulai sesi (`session_start()`)[cite: 244].
+    * Verifikasi kredensial pengguna terhadap *database*.
+    * [cite_start]**Penting**: Gunakan fungsi `md5()` untuk mengenkripsi *password* yang dimasukkan pengguna sebelum membandingkannya dengan nilai hash di *database*[cite: 348].
+    * [cite_start]Jika login berhasil, **setel variabel sesi** untuk `login`, `nama` pengguna, dan `level` pengguna[cite: 250, 253].
+    * Arahkan pengguna ke halaman beranda yang sesuai dengan level mereka.
+
+### 1.2. Proteksi Halaman Berbasis Level
+
+Anda harus membuat dua halaman beranda yang berbeda berdasarkan `level` pengguna setelah login berhasil:
+
+| Level | Halaman Tujuan | Navigasi yang Tampil |
+| :---: | :--- | :--- |
+| **1 (Admin)** | `admin.php` | [cite_start]Home, Data Master, Transaksi, dan Laporan [cite: 357] |
+| **2 (User Biasa)** | `user.php` | [cite_start]Home, Transaksi, dan Laporan [cite: 362] |
+
+**Persyaratan Proteksi:**
+1.  [cite_start]Di awal setiap halaman (misalnya `admin.php` atau `user.php`), terapkan mekanisme proteksi: periksa apakah sesi `login` telah disetel dan bernilai `true`[cite: 269].
+2.  [cite_start]Jika akses ditolak (belum login), tampilkan pesan dan berikan tautan untuk kembali ke `login.php`[cite: 271, 272].
+3.  Implementasikan logika untuk menampilkan elemen navigasi berdasarkan nilai `level` yang tersimpan dalam sesi.
+
+### 1.3. Logout (`logout.php`)
+
+1.  [cite_start]Buat file `logout.php` yang berfungsi untuk menghapus (`unset`) variabel sesi yang relevan (misalnya `login`, `username`, `level`)[cite: 281, 282].
+2.  [cite_start]Arahkan pengguna kembali ke `login.php` setelah sukses logout[cite: 284].
+
+---
+
+## 2. Implementasi Reporting Sederhana (20 Menit)
+
+Buat halaman laporan sederhana (`laporan.php`) yang dapat menampilkan data dan memiliki fungsionalitas ekspor/cetak.
+
+### 2.1. Tampilan Laporan
+
+1.  [cite_start]Sertakan *library* **Chart.js** melalui CDN[cite: 32].
+2.  [cite_start]Tampilkan **grafik batang** sederhana (`<canvas id="myChart">`) yang memvisualisasikan data (misalnya data Penjualan Produk)[cite: 35].
+3.  [cite_start]Tampilkan bagian **Rekap** data penjualan dalam bentuk tabel (No, Total, Tanggal) di bawah grafik [cite: 77-79].
+4.  [cite_start]Tampilkan bagian **Total** yang menunjukkan **Jumlah Pelanggan** dan **Jumlah Pendapatan** kumulatif[cite: 102, 103].
+
+### 2.2. Fungsionalitas Ekspor
+
+1.  [cite_start]Tambahkan tombol **Cetak** dan **Excel**[cite: 114].
+2.  **Tombol Cetak**: Implementasikan fungsi `window.print()` untuk memunculkan kotak dialog cetak *browser* saat tombol diklik. [cite_start]Pastikan halaman cetak mencakup Grafik, Rekap, dan Total[cite: 133].
+3.  [cite_start]**Tombol Excel**: Tautkan tombol ini ke skrip PHP yang berisi *header* untuk memaksa *download* sebagai file Excel (`laporan.xls`), memastikan data yang diekspor adalah data Rekap dan Total (tanpa grafik)[cite: 149].
+
+    Gunakan *header* PHP berikut di skrip ekspor:
+    ```php
+    <?php
+    header("Content-Type: application/vnd.ms-excel; charset=utf-8");
+    header("Content-Disposition: attachment; filename=laporan.xls");
+    ?>
+    ```
+---
