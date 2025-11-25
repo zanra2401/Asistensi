@@ -8,9 +8,9 @@ Membangun sistem login berbasis level dengan session, menerapkan praktik keamana
 ---
 
 ## 1. Login & Session
+- buat user baru di table user pastikan password nya di hash dengan SHA256
 - Buat halaman login `login.php` yang memvalidasi user berdasarkan **level**.
 - inputan berupa `username` dan `password`
-- gunakan table user di database penjualan untuk login
 - Simpan informasi login di **session** untuk mengontrol akses ke halaman laporan.  
 - Pastikan query database menggunakan **prepared statement** untuk mencegah **SQL injection**.  
 - (Opsional) Implementasikan token CSRF untuk form login untuk meningkatkan keamanan.  
