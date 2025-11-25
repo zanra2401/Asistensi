@@ -35,5 +35,5 @@ Membangun sistem login berbasis level dengan session, menerapkan praktik keamana
 ### Hasil yang Diharapkan
 - Sistem login berbasis level dengan session.  
 - Form login aman dari SQL injection dan (opsional) CSRF.  
-- Laporan penjualan dinamis dalam bentuk diagram batang menggunakan Chart.js.  
+- Laporan penjualan dalam bentuk diagram batang menggunakan Chart.js.  
 - Praktik keamanan dasar diterapkan di aplikasi web.
