@@ -3,13 +3,14 @@
 **Tujuan:**  
 Membangun sistem login berbasis level dengan session, menerapkan praktik keamanan dasar, serta menampilkan laporan penjualan berbentuk diagram menggunakan Chart.js.
 
-**Durasi:** ±40 menit
+**Durasi:** ±50 menit
 
 ---
 
 ## 1. Login & Session
 - Buat halaman login `login.php` yang memvalidasi user berdasarkan **level**.
 - inputan berupa `username` dan `password`
+- gunakan table user di database penjualan untuk login
 - Simpan informasi login di **session** untuk mengontrol akses ke halaman laporan.  
 - Pastikan query database menggunakan **prepared statement** untuk mencegah **SQL injection**.  
 - (Opsional) Implementasikan token CSRF untuk form login untuk meningkatkan keamanan.  
